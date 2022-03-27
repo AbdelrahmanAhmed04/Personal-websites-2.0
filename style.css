@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    background-color: var(--main_background);
+    color: var(--text_color)
+}
+:root{
+    --main_background: #050A0F;
+    --text_color: #F6FFF2;
+    --third_color: #00d9ff;
+    --forth_color: #07111A;
+    --content_font:'Poppins', sans-serif;
+    --logo_font: 'Poppins', sans-serif;
+    --header-font:'Balsamiq Sans', cursive;
+    --header_font_size:45px;
+    --header_sub_font_size:35px;
+    --content-font-size:20px;
+}
+nav{
+    display: flex;
+    padding: 4vh 0vw 4vh 0vw;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    position: relative;
+    margin:auto;
+    background-color: var(--forth_color);
+}
+.logo{
+    font-family: var(--logo_font);
+}
+.logo h1{
+    font-weight: 600;
+    letter-spacing: .1em;
+    font-size: 26px;
+    }
+.logo a{
+    text-decoration: none;
+    color: var(--text_color)
+    }
+.third_color{
+    color: var(--third_color);
+}
+.nav_links{
+    border: 0;
+}
+.nav_links ul{
+    list-style: none;
+    display: flex;
+}
+.nav_links ul li{
+    margin-left: 5vw;
+    font-family: var(--content_font);
+    font-size: 18px;
+    font-weight: 400;
+}
+.nav_links a{
+    text-decoration: none;
+    color: var(--text_color);
+    transition: 400ms;
+}
+.nav_links a:hover {
+    color: var(--third_color);
+    letter-spacing: .05em;
+}
+.hero_section{
+    width: 80%;
+    position: relative;
+    margin:auto;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    height: 85vh;
+    justify-content: space-between;
+}
+.hero_section img{
+    width: 400px;
+    max-width: 45%;
+    border-radius: 50%;
+    border: 15px solid var(--forth_color);
+    box-shadow: 0 0 0 20px #020203;
+    position: relative;
+    order: 2;
+    margin-left: 40px;
+}
+.hero_text{
+    position: relative;
+    color: var(--text-color);
+}
+.hero_text p{
+    text-align: center;
+}
+.main_hero_text p{
+    font-family: var(--header-font);
+    font-size: var(--header_font_size);
+    font-weight: 400;
+}
+.sub_title{
+    font-size: var(--header_sub_font_size);
+    font-family: var(--content_font);
+    font-weight: 300;
+}
+.main_call_to_action{
+    font-family: var(--content_font);
+    font-size: 22px;
+    padding: 10px;
+    margin-right: 50px;
+    border-radius: 10px;
+    background-color: var(--forth_color);
+    color: var(--third_color);
+}
+.main_call_to_action a{
+    text-decoration: none;
+    color: var(--third_color);
+    transition: 300ms;
+}
+.main_call_to_action a:hover{
+    font-size: 1.05em;
+    color: var(--text_color);
+}
+.secondry_call_to_action{
+    font-family: var(--content_font);
+    font-size: 16px;
+    text-decoration: underline 2px;
+}
+.secondry_call_to_action a{
+    color: var(--text_color);
+    text-decoration: none;
+}
+.calls_to_actions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+.about{
+width: 80%;
+position: relative;
+margin:auto;
+margin-top: 20px;
+color: var(--text_color);
+font-family: var(--content_font);
+}
+.header_tags{
+
+}
+.header_tags h2{
+
+}
+.tags{
+
+}
+.about_text{
+
+}
+.about_part{
+
+}
+.about_part h3{
+
+}
+.about_part h4{
+
+}
+.text_within_elements{
+
+}
+.text_within_elements p{
+
+}
+.text_within_elements ol{
+
+}
+.text_within_elements ol li{
+
+}
+.skills_block{
+
+}
+.skills_block ul{
+
+}
+.skills_block ul li{
+
+}
+@media screen and (max-width: 1005px){
+    nav{
+        width: 100%;
+        padding-right: 7.5%;
+        padding-left: 7.5%;
+    }
+    .hero_section{
+        width:85%;
+        }
+    .nav_links ul li{
+        margin-left: 3vw;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .logo h2{
+        font-size: 26px;
+    }
+}
+.main_hero_text{
+font-family: var(--header-font);
+font-size: var(--header_sub_font_size);
+}
+@media screen and (max-width: 800px){
+    nav{
+        width:100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .hero_section{
+        width:90%;
+        }
+    .nav_links ul li{
+        margin-left: 3vw;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .logo h2{
+        font-size: 24px;
+    }
+}
